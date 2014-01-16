@@ -1,0 +1,17 @@
+Source: sequtils
+Section: unknown
+Priority: optional
+Maintainer: Kevin Thornton <kevin@krthornt.uchicago.edu>
+Standards-Version: 3.5.8
+Build-Depends: debmake libboost-dev libsequence1-dev
+
+Package: sequtils
+Architecture: any
+Depends: libsequence1 (>= 1.3.3)
+Description: Missing
+ Missing
+
+Package: sequtils-doc
+Architecture: all
+Description: Documentation
+ Missing

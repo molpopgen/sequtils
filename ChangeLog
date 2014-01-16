@@ -1,0 +1,380 @@
+2009-01-23 16:52  kevin
+
+	* Makefile.in, aclocal.m4, configure, configure.in, depcomp:
+	  package 0.2.7
+
+2009-01-23 16:47  kevin
+
+	* src/: Makefile.am, Makefile.in, poolCommon.cc, revcom.cc: added
+	  #includes to .cc files to compile properly on compilers that are
+	  nice and strict.  Updated Makefiles to behave better w.r.t
+	  CXXFLAGS and CFLAGS
+
+2008-05-15 20:43  kevin
+
+	* configure, configure.in: package 0.2.6
+
+2008-05-15 20:42  kevin
+
+	* src/tohudson2001.cc: return value of toupper is now typecast to
+	  char so that output is correct
+
+2008-05-15 20:42  kevin
+
+	* src/poolCommon.cc: fixed bug in describing -m option
+
+2008-01-22 09:50  kevin
+
+	* aclocal.m4, config.h.in, configure, configure.in, mkinstalldirs:
+	  package 0.2.5
+
+2008-01-22 09:49  kevin
+
+	* src/: Makefile.am, Makefile.in, clustalwtofasta.cc, getopt.c,
+	  getopt.h, getoptFix.h, mstoexhap.cc, poolCommon.cc, revcom.cc,
+	  tophylip.cc, trimallgaps.cc: updated use of getopt for OS X
+	  10.5.x compatibility
+
+2005-09-21 10:33  kevin
+
+	* aclocal.m4, config.h.in, configure, configure.in,
+	  debian/changelog: pacakge 0.2.4
+
+2005-09-20 11:45  kevin
+
+	* src/tohudson2001.cc: data are now read in and stored in uppercase
+
+2005-08-31 07:53  kevin
+
+	* src/tohudson2001.cc: now adds the name "anc" to the outgroup line
+	  to be compatible w/exhap
+
+2005-08-31 07:53  kevin
+
+	* src/mstoexhap.cc: now uses fromstdin() to read input from stdin
+
+2004-04-12 08:35  kevin
+
+	* debian/changelog: updated to 0.2.3-4, compiled vs libsequence
+	  1.3.9
+
+2004-04-08 07:04  kevin
+
+	* debian/changelog: to compile against libsequence 1.3.8
+
+2004-02-02 09:36  kevin
+
+	* debian/changelog: new release of .deb, compiled against
+	  libsequence 1.3.6
+
+2004-01-12 08:08  kevin
+
+	* debian/: changelog, control: package 0.2.3
+
+2004-01-12 07:34  kevin
+
+	* aclocal.m4, configure, configure.in: package version 0.2.3 uses
+	  autoconf to check for headers required for compilation
+
+2003-10-26 09:46  kevin
+
+	* configure, configure.in, debian/changelog, debian/control:
+	  package 0.2.2
+
+2003-09-08 07:36  kevin
+
+	* src/fillInSeq: removed binary (what was it doing there?)
+
+2003-09-08 07:36  kevin
+
+	* src/: fillInSeq, tohudson2001.cc: added #include<iostream>
+
+2003-09-03 09:01  kevin
+
+	* src/: LDhat_to_exhap.cc, clustalwtofasta.cc, fillInSeq,
+	  makeLocusList.cc, makeLocusList.hpp, mstoexhap.cc, poolCommon.cc,
+	  revcom.cc, tophylip.cc, trimallgaps.cc: updated to new
+	  libsequence structure (#include <Sequence/foo.hpp>)
+
+2003-08-13 07:09  kevin
+
+	* src/: Makefile.am, Makefile.in, clustalwtofasta.cc, fillInSeq:
+	  new program: fillInSeq (fillInSeq.cc)
+
+2003-07-29 14:27  kevin
+
+	* Makefile.in, aclocal.m4, configure, configure.in,
+	  src/Makefile.in: package version 0.2.1
+
+2003-07-29 14:26  kevin
+
+	* src/mstoexhap.cc: now compatible with latest version of exhap
+
+2003-06-07 14:11  kevin
+
+	* ChangeLog, configure, configure.in, debian/changelog,
+	  src/Makefile.in: package version 0.2.0
+
+2003-06-07 14:11  kevin
+
+	* src/Makefile.am: added getoptFix.h to sources list
+
+2003-06-07 12:46  kevin
+
+	* src/: clustalwtofasta.cc, makeLocusList.cc, mstoexhap.cc,
+	  poolCommon.cc, revcom.cc, tohudson2001.cc, tophylip.cc,
+	  trimallgaps.cc: compatibility with g++ 2.95 via conditional
+	  compilation.	Programs now use compatibility header getoptFix.h
+
+2003-06-07 12:45  kevin
+
+	* src/getoptFix.h: added portability header
+
+2003-05-09 15:00  kevin
+
+	* configure, configure.in, debian/changelog: package version 0.1.9
+
+2003-05-09 14:58  kevin
+
+	* src/: mstoexhap.cc, tohudson2001.cc: updated to new version of
+	  Hudson's code (outputs the word "anc" for the line of ancestral
+	  states)
+
+2003-04-03 14:27  kevin
+
+	* src/revcom.cc: removed unecessary #include statements
+
+2003-04-03 14:18  kevin
+
+	* src/: clustalwtofasta.cc, makeLocusList.cc, revcom.cc,
+	  tophylip.cc, trimallgaps.cc: code now takes advantage of explicit
+	  instantiations of I/O templates on GNU systems
+
+2003-04-03 14:17  kevin
+
+	* configure, configure.in, debian/changelog: package version up to
+	  0.1.8
+
+2003-04-01 09:24  kevin
+
+	* debian/: README.debian, changelog, control, copyright,
+	  crontab.ex, dirs, diversions.ex, files, inetd.conf.ex, info.ex,
+	  init.d.ex, manpage.1.ex, menu.ex, rules, sequtils-doc.files,
+	  substvars, watch.ex: added debian dir
+
+2003-04-01 09:24  kevin
+
+	* Makefile.am, Makefile.in: removed debian/tmp
+
+2003-03-24 08:07  kevin
+
+	* configure, src/clustalwtofasta.cc, src/makeLocusList.hpp,
+	  src/mstoexhap.cc, src/poolCommon.cc, src/revcom.cc,
+	  src/tohudson2001.cc, src/tophylip.cc, src/trimallgaps.cc: added
+	  "unsing namespace Sequence"
+
+2003-02-19 11:47  kevin
+
+	* src/toLDhat.cc: typecast for positions in output changed from int
+	  to unsigned
+
+2003-02-19 11:47  kevin
+
+	* src/tohudson2001.cc: typecast for position changed from int to
+	  unsigned
+
+2003-02-19 09:36  kevin
+
+	* ChangeLog: updated
+
+2003-02-19 09:36  kevin
+
+	* configure.in: package 0.1.7
+
+2003-02-19 07:19  kevin
+
+	* src/toLDhat.cc: removed addition of 1 to site positions to
+	  reflect changes in Sequence::PolySites
+
+2003-02-19 07:19  kevin
+
+	* src/tohudson2001.cc: removed addition of 1 to output positions,
+	  to reflect changes in Sequence::PolySites
+
+2003-02-17 09:08  kevin
+
+	* src/: poolCommon.cc, poolCommon.hpp: made usage() function more
+	  user-friendly
+
+2003-02-17 09:08  kevin
+
+	* src/toLDhat.cc: updated to new usage(const char *)
+
+2003-02-17 09:02  kevin
+
+	* src/poolCommon.cc: cleanup
+
+2003-02-11 08:15  kevin
+
+	* configure: [no log message]
+
+2003-02-11 08:05  kevin
+
+	* configure.in: package 0.1.6
+
+2003-02-11 08:04  kevin
+
+	* src/Makefile.in: [no log message]
+
+2003-02-11 08:04  kevin
+
+	* src/: toLDhat.cc, tohudson2001.cc: now work for multiple files
+	  with lots of options :)
+
+2003-02-11 08:03  kevin
+
+	* src/Makefile.am: added new source files to toLDhat, tohudson2001
+
+2003-02-11 08:03  kevin
+
+	* src/: PolySitesNoSingletons.cc, PolySitesNoSingletons.hpp:
+	  removed
+
+2003-02-11 08:03  kevin
+
+	* src/: makeLocusList.cc, makeLocusList.hpp, poolCommon.cc,
+	  poolCommon.hpp: added these files as a common base for toLDhat
+	  and tohudson2001
+
+2003-02-11 08:02  kevin
+
+	* src/tophylip.cc: cleanup
+
+2003-02-10 07:51  kevin
+
+	* configure.in: package version 0.1.5
+
+2003-02-10 07:51  kevin
+
+	* src/tohudson2001.cc: now works properly for multiple loci
+
+2003-01-20 08:18  kevin
+
+	* configure, configure.in: package 014 -- first version to work on
+	  OS X w/g++ 3.1
+
+2003-01-20 08:13  kevin
+
+	* src/: clustalwtofasta.cc, mstoexhap.cc, revcom.cc, toLDhat.cc,
+	  tophylip.cc, trimallgaps.cc: no longer include getopt.h on OS X
+
+2003-01-18 13:02  kevin
+
+	* src/mstoexhap.cc: now syncs w/C I/O streams
+
+2002-12-18 06:42  kevin
+
+	* src/mstoexhap.cc: cleanup of code
+
+2002-12-18 06:40  kevin
+
+	* src/mstoexhap.cc: testing anjuta 1.x cvs capabilities
+
+2002-12-17 09:16  kevin
+
+	* src/mstoexhap.cc: package version 0.1.3-- added -d flag to
+	  specify a-d specified samples
+
+2002-12-17 09:15  kevin
+
+	* configure, configure.in: package version 0.1.3
+
+2002-12-15 09:47  kevin
+
+	* src/mstoexhap.cc: package version 0.1.2--changed output of
+	  ancestor to ? instead of 0, which was a n error
+
+2002-12-15 09:47  kevin
+
+	* configure.in: package version 0.1.2
+
+2002-11-08 12:51  kevin
+
+	* configure: updated package version #
+
+2002-11-08 12:49  kevin
+
+	* Makefile.in, aclocal.m4, configure, configure.in,
+	  src/Makefile.in, src/mstoexhap.cc: updated to new libsequence
+	  1.0.4, changed package version to 0.1.1
+
+2002-09-05 11:49  kevin
+
+	* src/PolySitesNoSingletons.cc: updated to new libsequence
+	  interface
+
+2002-08-15 09:15  kevin
+
+	* src/Makefile.am: fixed typo
+
+2002-08-12 07:25  kevin
+
+	* Makefile.in, src/LDhat_to_exhap.cc, src/PolySitesNoSingletons.cc,
+	  src/PolySitesNoSingletons.hpp, src/clustalwtofasta.cc,
+	  src/mstoexhap.cc, src/revcom.cc, src/toLDhat.cc,
+	  src/tohudson2001.cc, src/tophylip.cc, src/trimallgaps.cc: update
+	  to changes in libsequence re: vectors
+
+2002-08-01 08:59  kevin
+
+	* src/: LDhat_to_exhap.cc, Makefile.am, Makefile.in: added
+	  conversion utility for LDhat files to exhap files
+
+2002-07-25 11:26  kevin
+
+	* src/: Makefile.in, PolySitesNoSingletons.cc,
+	  PolySitesNoSingletons.h, PolySitesNoSingletons.hpp,
+	  clustalwtofasta.cc, mstoexhap.cc, revcom.cc, toLDhat.cc,
+	  tohudson2001.cc, tophylip.cc, trimallgaps.cc: .h to .hpp
+
+2002-07-24 08:05  kevin
+
+	* src/PolySitesNoSingletons.cc: update to new PolyTable interface
+
+2002-07-16 09:26  kevin
+
+	* src/Makefile.am: fixed portability problem
+
+2002-07-05 14:05  kevin
+
+	* src/: Makefile.am, Makefile.in, tophylip.cc: added tophylip to
+	  the distribution
+
+2002-06-26 05:12  kevin
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, Makefile.in,
+	  NEWS, README, acinclude.m4, aclocal.m4, config.guess,
+	  config.h.in, config.sub, configure, configure.in, install-sh,
+	  missing, mkinstalldirs, sequtils.lsm.in, sequtils.spec.in,
+	  stamp-h.in, texinfo.tex, src/Makefile.am, src/Makefile.in,
+	  src/PolySitesNoSingletons.cc, src/PolySitesNoSingletons.h,
+	  src/clustalwtofasta.1, src/clustalwtofasta.cc, src/configure,
+	  src/getopt.c, src/getopt.h, src/mstoexhap.cc, src/revcom.1,
+	  src/revcom.cc, src/sequtils.1, src/toLDhat.1, src/toLDhat.cc,
+	  src/tohudson2001.cc, src/trimallgaps.1, src/trimallgaps.cc:
+	  Initial revision
+
+2002-06-26 05:12  kevin
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, Makefile.am, Makefile.in,
+	  NEWS, README, acinclude.m4, aclocal.m4, config.guess,
+	  config.h.in, config.sub, configure, configure.in, install-sh,
+	  missing, mkinstalldirs, sequtils.lsm.in, sequtils.spec.in,
+	  stamp-h.in, texinfo.tex, src/Makefile.am, src/Makefile.in,
+	  src/PolySitesNoSingletons.cc, src/PolySitesNoSingletons.h,
+	  src/clustalwtofasta.1, src/clustalwtofasta.cc, src/configure,
+	  src/getopt.c, src/getopt.h, src/mstoexhap.cc, src/revcom.1,
+	  src/revcom.cc, src/sequtils.1, src/toLDhat.1, src/toLDhat.cc,
+	  src/tohudson2001.cc, src/trimallgaps.1, src/trimallgaps.cc:
+	  initial commit to CVS
+

@@ -1,0 +1,21 @@
+Begin3
+Title:		sequtils
+Version:	@VERSION@
+Entered-date:	@ISODATE@
+Description:	a collection of programs that do things with DNA sequence data
+		@configure_input@
+		Please edit sequtils.lsm.in to fix the Keywords and
+		Primary-site entries, add several more lines of
+		description here if appropriate, and to delete these
+		instructions.
+Keywords:	[substitute your keywords here]
+Author: 	kevin@krthornt.uchicago.edu (Kevin Thornton)
+Maintained-by:	kevin@krthornt.uchicago.edu (Kevin Thornton)
+Primary-site:	metlab.unc.edu pub/Linux/apps/some/directory
+		31k sequtils-@VERSION@.tar.gz
+		500  sequtils.lsm
+Alternate-site: 
+Original-site:  
+Platforms:      
+Copying-policy:	GNU copyleft
+End
