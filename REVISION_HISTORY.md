@@ -1,6 +1,6 @@
-* version 0.2.8 (Oct 14, 2014) Updated for libsequence 1.8.3 and C++11
+* version 0.2.9 (Oct 14, 2014) Updated for libsequence 1.8.3 and C++11
 
-* version 0.2.7 (Nov 9, 2013)  Updated for libsequence 1.7.8, which is required for this version
+* version 0.2.8 (Nov 9, 2013)  Updated for libsequence 1.7.8, which is required for this version
 
 * version 0.2.7 (Feb. 4, 2009)  Compiles nicely now on gcc 4.3.x
 
