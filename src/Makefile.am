@@ -11,5 +11,5 @@ fillInSeq_SOURCES=fillInSeq.cc
 
 man_MANS=sequtils.1 revcom.1 trimallgaps.1 clustalwtofasta.1 toLDhat.1
 
-CXXFLAGS = -O3 -Wall   -I$(includedir)
-CFLAGS = -O3 -Wall   -I$(includedir)
+AM_CXXFLAGS=
+AM_CFLAGS=
