@@ -37,7 +37,7 @@ main (int argc, char *argv[])
   argv+=optind;
   SimParams *p = new SimParams;
   p->fromfile(stdin);
-  SimData *data = new SimData(p->totsam());
+  SimData *data = new SimData();
 
   std::ios_base::sync_with_stdio(true);
   int rv;
